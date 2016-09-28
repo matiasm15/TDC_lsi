@@ -43,7 +43,7 @@
           //Entra aca si se reciben los 4 paquetes, 
           //y ninguno de los paquetes es respuesta del gateway con la leyenda "Host de destino inaccesible"
             $res = "Up!"; // Color Verde
-        }elseif(!($recibidos4) && !($recibidos0)) {
+        }elseif(!($recibidos4) && !($recibidos0) && !($inaccesible)) {
           //Si hubo perdida parcial de paquetes, entra aca
           $res = "Unknown!"; // Color Amarillo
         }else{
