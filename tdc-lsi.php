@@ -146,14 +146,48 @@
             <tr>
               <th class="text-center col-xs-3">miCompu</th>
               <td class="text-center col-xs-3">192.168.10.100</td>
+<<<<<<< HEAD:tdc-lsi.php
               <td class="text-center col-xs-3"><strong>  <?php echo estado("192.168.10.100"); ?>  </strong></td>
+=======
+              <td class="text-center col-xs-3">              
+                <?php
+                  $ping = shell_exec("ping 192.168.10.100");
+
+                  $recibidos = strpos($ping, "recibidos = 4");
+                  $inaccesible = strpos($ping, "Host de destino inaccesible");
+
+                  if ($recibidos && !($inaccesible)) {
+                    ?> Up! <?php
+                  }else {
+                    ?> Down! <?php
+                  }
+                ?>
+              </td>
+>>>>>>> origin/master:tdc-lsi.php
               <td class="text-center col-xs-3">Today</td>
             </tr> 
 
             <tr>
               <th class="text-center col-xs-3">otraCompu</th>
               <td class="text-center col-xs-3">192.168.10.111</td>
+<<<<<<< HEAD:tdc-lsi.php
               <td class="text-center col-xs-3"><strong>  <?php echo estado("192.168.10.111"); ?>  </strong></td>
+=======
+              <td class="text-center col-xs-3">              
+                <?php
+                  $ping = shell_exec("ping 192.168.10.111");
+
+                  $recibidos = strpos($ping, "recibidos = 4");
+                  $inaccesible = strpos($ping, "Host de destino inaccesible");
+
+                  if ($recibidos && !($inaccesible)) {
+                    ?> Up! <?php
+                  }else {
+                    ?> Down! <?php
+                  }
+                ?>
+              </td>
+>>>>>>> origin/master:tdc-lsi.php
               <td class="text-center col-xs-3">Today</td>
             </tr>  
 
