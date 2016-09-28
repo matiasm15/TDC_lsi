@@ -32,12 +32,12 @@
         $aux = "ping ";
         $comando = $aux . $ip;
 
-        set_time_limit(0);
+        set_time_limit(30); //resetea el tiempo de ejecutcion de el script cada vez que se ejecuta esta funcion
         $ping = shell_exec($comando);
 
         $recibidos4 = strpos($ping, "recibidos = 4");
         $recibidos0 = strpos($ping, "recibidos = 0");
-        $inaccesible = strpos($ping, "Host de destino inaccesible");
+        $inaccesible= strpos($ping, "Host de destino inaccesible");
 
         if ($recibidos4 && !($inaccesible)) {
           //Entra aca si se reciben los 4 paquetes, 
@@ -56,8 +56,7 @@
   ?>
 
 
-
-  <?php //Ejemplo curso PHP aprenderaprogramar.com
+  <?php
 
     function fecha(){
       $time = time();
