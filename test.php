@@ -1,10 +1,9 @@
 <?php
-<<<<<<< HEAD
 
     function estado($ip)
       {
-      	$aux = "ping ";
-      	$comando = $aux . $ip;
+        $aux = "ping ";
+        $comando = $aux . $ip;
 
         $ping = shell_exec($comando);
 
@@ -13,14 +12,14 @@
         $inaccesible = strpos($ping, "Host de destino inaccesible");
 
         if ($recibidos4 && !($inaccesible)) {
-        	//Entra aca si se reciben los 4 paquetes, 
-        	//y ninguno de los paquetes es respuesta del gateway con la leyenda "Host de destino inaccesible"
+          //Entra aca si se reciben los 4 paquetes, 
+          //y ninguno de los paquetes es respuesta del gateway con la leyenda "Host de destino inaccesible"
             $res = "Up!"; // Color Verde
         }elseif(!($recibidos4) && !($recibidos0)) {
-        	//Si hubo perdida parcial de paquetes, entra aca
-        	$res = "Unknown!"; // Color Amarillo
+          //Si hubo perdida parcial de paquetes, entra aca
+          $res = "Unknown!"; // Color Amarillo
         }else{
-        	//Si hubo perdida total de paquetes / el host es inaccesible, entra aca
+          //Si hubo perdida total de paquetes / el host es inaccesible, entra aca
             $res = "Down!"; // Color Rojo
         };
 
@@ -40,16 +39,3 @@ echo estado("");
 ?>
 
 <?php echo estado(""); ?>
-=======
- $ping = shell_exec("ping 192.168.10.110");
-
- $recibidos = strpos($ping, "recibidos = 4");
- $inaccesible = strpos($ping, "Host de destino inaccesible");
-
- if ($recibidos && !($inaccesible)) {
-   ?> Up! <?php
-  }else {
-   ?> Down! <?php
-  } 
-?>
->>>>>>> origin/master
