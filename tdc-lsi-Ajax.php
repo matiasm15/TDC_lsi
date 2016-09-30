@@ -54,71 +54,71 @@
   					<tr>
   						<th class="text-center col-xs-3">ROUTER-LSI</th>
   						<td class="ip-address text-center col-xs-3">192.168.1.20</td>
-  						<td class="estado text-center col-xs-3"><strong></strong></td>
-  						<td class="text-center col-xs-3"><?php fecha(); ?></td>
+  						<td class="estado text-center col-xs-3"></td>
+  						<td class="text-center col-xs-3"></td>
   					</tr>
 
             <tr>
               <th class="text-center col-xs-3">ROUTER-REDES</th>
               <td class="ip-address text-center col-xs-3">192.168.1.21</td>
-              <td class="estado text-center col-xs-3"><strong></strong></td>
-              <td class="text-center col-xs-3"><?php fecha(); ?></td>
+              <td class="estado text-center col-xs-3"></td>
+              <td class="text-center col-xs-3"></td>
             </tr>
 
             <tr>
               <th class="text-center col-xs-3">ROUTER-4TO</th>
               <td class="ip-address text-center col-xs-3">192.168.1.22</td>
-              <td class="estado text-center col-xs-3"><strong></strong></td>
-              <td class="text-center col-xs-3"><?php fecha(); ?></td>
+              <td class="estado text-center col-xs-3"></td>
+              <td class="text-center col-xs-3"></td>
             </tr>
 
               <tr>
               <th class="text-center col-xs-3">ROUTER-1RO-2DO</th>
               <td class="ip-address text-center col-xs-3">192.168.1.23</td>
-              <td class="estado text-center col-xs-3"><strong></strong></td>
-              <td class="text-center col-xs-3"><?php fecha(); ?></td>
+              <td class="estado text-center col-xs-3"></td>
+              <td class="text-center col-xs-3"></td>
             </tr>
 
              <tr>
               <th class="text-center col-xs-3">ROUTER-PEDRO</th>
               <td class="ip-address text-center col-xs-3">192.168.1.24</td>
-              <td class="estado text-center col-xs-3"><strong></strong></td>
-              <td class="text-center col-xs-3"><?php fecha(); ?></td>
+              <td class="estado text-center col-xs-3"></td>
+              <td class="text-center col-xs-3"></td>
             </tr>
 
               <tr>
               <th class="text-center col-xs-3">ROUTER-LSI2</th>
               <td class="ip-address text-center col-xs-3">192.168.1.25</td>
-              <td class="estado text-center col-xs-3"><strong></strong></td>
-              <td class="text-center col-xs-3"><?php fecha(); ?></td>
+              <td class="estado text-center col-xs-3"></td>
+              <td class="text-center col-xs-3"></td>
             </tr>
 
               <tr>
               <th class="text-center col-xs-3">SrvLsi-01</th>
               <td class="ip-address text-center col-xs-3">192.168.1.35</td>
-              <td class="estado text-center col-xs-3"><strong></strong></td>
-              <td class="text-center col-xs-3"><?php fecha(); ?></td>
+              <td class="estado text-center col-xs-3"></td>
+              <td class="text-center col-xs-3"></td>
             </tr>
 
             <tr>
               <th class="text-center col-xs-3">SrvLsi-02</th>
               <td class="ip-address text-center col-xs-3">192.168.1.45</td>
-              <td class="estado text-center col-xs-3"><strong></strong></td>
-              <td class="text-center col-xs-3"><?php fecha(); ?></td>
+              <td class="estado text-center col-xs-3"></td>
+              <td class="text-center col-xs-3"></td>
             </tr>
 
             <tr>
               <th class="text-center col-xs-3">PrefecturaVM</th>
               <td class="ip-address text-center col-xs-3">192.168.1.55</td>
-              <td class="estado text-center col-xs-3"><strong></strong></td>
-              <td class="text-center col-xs-3"><?php fecha(); ?></td>
+              <td class="estado text-center col-xs-3"></td>
+              <td class="text-center col-xs-3"></td>
             </tr>
 
             <tr>
               <th class="text-center col-xs-3">SrvRedes</th>
               <td class="ip-address text-center col-xs-3">192.168.1.72</td>
-              <td class="estado text-center col-xs-3"><strong></strong></td>
-              <td class="text-center col-xs-3"><?php fecha(); ?></td>
+              <td class="estado text-center col-xs-3"></td>
+              <td class="text-center col-xs-3"></td>
             </tr> 
 
   				</tbody>
@@ -140,7 +140,7 @@
           url: "leerEstadoAjax.php",
           data: $ip
         }).done(function(data) {
-          $(value).find(".estado strong").text(data);
+          $(value).find(".estado").text(data);
         });
       })
     })

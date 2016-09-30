@@ -26,9 +26,9 @@
         };
 
         $arrayIp = explode(".",$ip);
-  		$nombreArchivo = implode("", $arrayIp);
-  		$archivo = $nombreArchivo . ".txt";
-  		$rutaArchivo = "estados/" . $archivo;
+  	  	$nombreArchivo = implode("", $arrayIp);
+  	  	$archivo = $nombreArchivo . ".txt";
+    		$rutaArchivo = "estados/" . $archivo;
 
         $fp = fopen($rutaArchivo,"w");
         fwrite($fp,$res);
@@ -39,23 +39,14 @@
 
 
 	$IP0 = "192.168.1.20";
-
 	$IP1 = "192.168.1.21";
-
 	$IP2 = "192.168.1.22";
-
-    $IP3 = "192.168.1.23";
-	
+  $IP3 = "192.168.1.23";
 	$IP4 = "192.168.1.24";
-	
 	$IP5 = "192.168.1.25";
-	
 	$IP6 = "192.168.1.35";
-	
 	$IP7 = "192.168.1.45";
-	
 	$IP8 = "192.168.1.55";
-	
 	$IP9 = "192.168.1.72";
 
 
