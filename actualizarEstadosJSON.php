@@ -25,7 +25,9 @@
           $res = "Up"; // Color Verde
         }elseif(!($recibidos4) && !($recibidos0) && !($inaccesible)) {
           //Si hubo perdida parcial de paquetes, entra aca
-          $res = "Unknown"; // Color Amarillo
+          $recibidos = strpos($ping, "recibidos =");
+          $recibidosNumero = $ping[$recibidos + 12];
+          $res = "Up (". $recibidosNumero . "/4)"; // Color Amarillo
         }else{
           //Si hubo perdida total de paquetes / el host es inaccesible, entra aca
           $res = "Down"; // Color Rojo
@@ -38,7 +40,9 @@
         $arrayIp = explode(".",$ip);
   	  	$nombreArchivo = implode("", $arrayIp);
   	  	$archivo = $nombreArchivo . ".txt";
-    	$rutaArchivo = "estados/" . $archivo;
+    	//$rutaArchivo = "estados/" . $archivo;
+    	$rutaArchivo = "C:/xampp/htdocs/TDC_lsi/estados/" . $archivo;
+
 
         $fp = fopen($rutaArchivo,"w");
         fwrite($fp,$textoJSON);
