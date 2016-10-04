@@ -37,7 +37,7 @@
   				<thead> 
   					<tr class="encabezado-tabla">
   						<th class="text-center col-xs-3">Dispositivo</th>
-  						<th class="text-center col-xs-3">Direccion IP</th>
+  						<th class="text-center col-xs-3" style='display:none;'>Direccion IP</th>
   						<th class="text-center col-xs-3">Estado</th>
   						<th class="text-center col-xs-3">Ultima Actualizacion</th>
   					</tr>
@@ -45,70 +45,70 @@
   				<tbody>
   					<tr>
   						<th class="text-center col-xs-3">ROUTER-LSI</th>
-  						<td id="ip0" class="text-center col-xs-3">192.168.1.20</td>
+  						<td id="ip0" class="text-center col-xs-3" style='display:none;'>192.168.1.20</td>
   						<td id="estado0" class="text-center col-xs-3"></td>
   						<td id="fecha0"  class="text-center col-xs-3"></td>
   					</tr>
 
   					<tr>
   						<th class="text-center col-xs-3">ROUTER-REDES</th>
-  						<td id="ip1" class="text-center col-xs-3">192.168.1.21</td>
+  						<td id="ip1" class="text-center col-xs-3" style='display:none;'>192.168.1.21</td>
   						<td id="estado1" class="text-center col-xs-3"></td>
   						<td id="fecha1"  class="text-center col-xs-3"></td>
   					</tr>
 
   					<tr>
   						<th class="text-center col-xs-3">ROUTER-4TO</th>
-  						<td id="ip2" class="text-center col-xs-3">192.168.1.22</td>
+  						<td id="ip2" class="text-center col-xs-3" style='display:none;'>192.168.1.22</td>
   						<td id="estado2" class="text-center col-xs-3"></td>
   						<td id="fecha2"  class="text-center col-xs-3"></td>
   					</tr>
 
   					  <tr>
   						<th class="text-center col-xs-3">ROUTER-1RO-2DO</th>
-  						<td id="ip3" class="text-center col-xs-3">192.168.1.23</td>
+  						<td id="ip3" class="text-center col-xs-3" style='display:none;'>192.168.1.23</td>
   						<td id="estado3" class="text-center col-xs-3"></td>
   						<td id="fecha3"  class="text-center col-xs-3"></td>
   					</tr>
 
   					 <tr>
   						<th class="text-center col-xs-3">ROUTER-PEDRO</th>
-  						<td id="ip4" class="text-center col-xs-3">192.168.1.24</td>
+  						<td id="ip4" class="text-center col-xs-3" style='display:none;'>192.168.1.24</td>
   						<td id="estado4" class="text-center col-xs-3"></td>
   						<td id="fecha4"  class="text-center col-xs-3"></td>
   					</tr>
 
   					  <tr>
   						<th class="text-center col-xs-3">ROUTER-LSI2</th>
-  						<td id="ip5" class="text-center col-xs-3">192.168.1.25</td>
+  						<td id="ip5" class="text-center col-xs-3" style='display:none;'>192.168.1.25</td>
   						<td id="estado5" class="text-center col-xs-3"></td>
   						<td id="fecha5"  class="text-center col-xs-3"></td>
   					</tr>
 
   					  <tr>
   						<th class="text-center col-xs-3">SrvLsi-01</th>
-  						<td id="ip6" class="text-center col-xs-3">192.168.1.35</td>
+  						<td id="ip6" class="text-center col-xs-3" style='display:none;'>192.168.1.35</td>
   						<td id="estado6" class="text-center col-xs-3"></td>
   						<td id="fecha6"  class="text-center col-xs-3"></td>
   					</tr>
 
    					<tr>
   						<th class="text-center col-xs-3">SrvLsi-02</th>
-  						<td id="ip7" class="text-center col-xs-3">192.168.1.45</td>
+  						<td id="ip7" class="text-center col-xs-3" style='display:none;'>192.168.1.45</td>
   						<td id="estado7" class="text-center col-xs-3"></td>
   						<td id="fecha7"  class="text-center col-xs-3"></td>
   					</tr>
 
    					<tr>
   						<th class="text-center col-xs-3">PrefecturaVM</th>
-  						<td id="ip8" class="text-center col-xs-3">192.168.1.55</td>
+  						<td id="ip8" class="text-center col-xs-3" style='display:none;'>192.168.1.55</td>
   						<td id="estado8" class="text-center col-xs-3"></td>
   						<td id="fecha8"  class="text-center col-xs-3"></td>
   					</tr>
 
    					<tr>
   						<th class="text-center col-xs-3">SrvRedes</th>
-  						<td id="ip9" class="text-center col-xs-3">192.168.172</td>
+  						<td id="ip9" class="text-center col-xs-3" style='display:none;'>192.168.172</td>
   						<td id="estado9" class="text-center col-xs-3"></td>
   						<td id="fecha9"  class="text-center col-xs-3"></td>
   					</tr> 
