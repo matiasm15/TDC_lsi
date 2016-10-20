@@ -37,6 +37,10 @@
   				<thead> 
   					<tr class="encabezado-tabla">
   						<th class="text-center col-xs-3">Dispositivo</th>
+<<<<<<< HEAD
+=======
+  						<th class="text-center col-xs-3" style='display:none;'>Direccion IP</th>
+>>>>>>> origin/master
   						<th class="text-center col-xs-3">Estado</th>
   						<th class="text-center col-xs-3">Ultima Actualizacion</th>
   					</tr>
@@ -47,6 +51,7 @@
 
           <?php
 
+<<<<<<< HEAD
             $path = "hostsList.json";
             $data = file_get_contents($path);
             $json = json_decode($data, true);
@@ -58,6 +63,27 @@
               echo   "<td class=\"text-center col-xs-3\">".  $row['host_date']   .   "</td>";
               echo "</tr>";
              } 
+=======
+            $path = "/hostsList.json";
+
+            if (!file_exists($path))
+                exit("File not found");
+
+            $data = file_get_contents($path);
+            $json = json_decode($data, true);
+            
+
+
+
+            
+            foreach ($json['hosts'] as $row) {
+              echo  "tr>";
+              echo    "<th class=\"text-center col-xs-3\">"  $row['name']    "</th>";
+              echo    "<td class=\"text-center col-xs-3\">"  $row['area']    "</td>";
+              echo    "<td iclass=\"text-center col-xs-3\">" $row['people']  "</td>";
+              echo  '</tr>';
+             };
+>>>>>>> origin/master
 
           ?> 
 
