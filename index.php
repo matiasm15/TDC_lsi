@@ -56,7 +56,7 @@
   					<tr class="encabezado-tabla">
   						<th class="vert-align col-xs-3">Dispositivo</th>
   						<th class="vert-align col-xs-3">Estado</th>
-  						<th class="vert-align col-xs-3">Ultima Actualizacion</th>
+  						<th class="vert-align col-xs-3">Última Actualización</th>
   					</tr>
   				</thead>
   				<tbody>
@@ -73,23 +73,27 @@
 
 <script type="text/javascript">
   function actualizar() {
-    $.post('hostsList.json', function(response) {
-      $('tbody').empty();
+    $.post({
+      url: 'hostsList.json',
+      dataType: 'json',
+      success: function(response) {
+        $('tbody').empty();
 
-      var hosts = response.hosts;
+        var hosts = response.hosts;
 
-      for (var i = 0; i < hosts.length; i++) {
-        var tr = $('<tr>').addClass('host ' + hosts[i].state);
+        for (var i = 0; i < hosts.length; i++) {
+          var tr = $('<tr>').addClass('host ' + hosts[i].state);
 
-        var tdName = $('<td>').addClass('vert-align col-xs-3 name').text(hosts[i].name);
-        var tdState = $('<td>').addClass('vert-align col-xs-3 state').html('<i class="fa fa-circle fa-3x"></i>');
-        var tdDate = $('<td>').addClass('vert-align col-xs-3 date').text(hosts[i].date);
+          var tdName = $('<td>').addClass('vert-align col-xs-3 name').text(hosts[i].name);
+          var tdState = $('<td>').addClass('vert-align col-xs-3 state').html('<i class="fa fa-circle fa-3x"></i>');
+          var tdDate = $('<td>').addClass('vert-align col-xs-3 date').text(hosts[i].date);
 
-        tr.append(tdName);
-        tr.append(tdState);
-        tr.append(tdDate);
+          tr.append(tdName);
+          tr.append(tdState);
+          tr.append(tdDate);
 
-        $('tbody').append(tr);
+          $('tbody').append(tr);
+        }
       }
     })
   }

@@ -30,7 +30,7 @@
 	 		set_time_limit(30); //resetea el tiempo de ejecutcion de el script cada vez que se ejecuta esta funcion
         	$errorCode_ping = shell_exec($comando);
 
-    	$host_state = ($errorCode_ping != null && $errorCode_ping == 0 ? 'up' : 'down';
+      $host_state = ($errorCode_ping != null && $errorCode_ping == 0) ? 'up' : 'down';
 
 	 		$host_name = $row_array[1];
 	 		$host_name = str_replace("\r" , "" , $host_name);
