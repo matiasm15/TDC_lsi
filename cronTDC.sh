@@ -1,2 +1,2 @@
 #!/bin/sh
-php -f "/ruta/actualizarEstadosJSON.php" > /dev/null &
+php -f "/ruta/generateJSON.php.php" > /dev/null &

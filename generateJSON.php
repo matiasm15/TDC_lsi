@@ -1,6 +1,7 @@
 <?php 
 
 	 function fecha(){
+	 	  
     	  $time = time();
       	  return date("d-m-Y (H:i:s)", $time);
      };
@@ -10,6 +11,8 @@
 
 <?php
 
+
+	 date_default_timezone_set('America/Argentina/Buenos_Aires');
 	 $rutaArchivo = "hostsList.conf";
 	 $fp = fopen($rutaArchivo,"r");
 
@@ -28,9 +31,9 @@
         	$errorCode_ping = shell_exec($comando);
         	
         	if ($errorCode_ping != null && $errorCode_ping == 0) {
-        		$host_state = '<img src="verde.png">';
+        		$host_state = '<i class="fa fa-circle fa-3x  aria-hidden="true" style="color:00FF00;" ></i>';
         	} else {
-        		$host_state = '<img src="rojo.png">';
+        		$host_state = '<i class="fa fa-circle fa-3x" aria-hidden="true" style="color:FF0000;" ></i>';
         	}
 
 
